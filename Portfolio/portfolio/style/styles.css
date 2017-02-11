@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url(../img/noisy-texture-100x100-o3-d10-c-dfe0e2-t0.png);
+    width:100%;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+a{
+    color:black;
+}
+
+table{
+	margin:auto;
+}
+p{
+    font-size: 20px;
+    margin:0;
+    padding-bottom:5px;
+
+}
+
+.h1About{
+    margin:0;  
+}
+
+.h1AboutRed{
+    margin:0;  
+   	color:#F45844;
+}
+
+
+/*form*/
+input[type=text], select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 15px 0;
+    display: inline-block;
+    background-image: url(../img/noisy-texture-100x100-o3-d10-c-dfe0e2-t0.png);
+    box-sizing: border-box;
+    border:none;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #F45844;
+    color: white;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #F45844;
+}
+
+input, textarea, text {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  
+}
+
+/*Header shit*/
+header{
+    
+    background-image:url(../img/noisy-texture-100x100-o3-d10-c-dfe0e2-t0.png);
+    padding-top:30px;
+    padding-bottom:0;
+    width:100%;
+    top:0;
+    position:fixed; 
+}
+
+.logo{
+    width:45%;
+    float:left;
+    padding-right:20px;
+}
+
+.leftGutterHeader{
+    
+    width:5%;
+    float:left;
+}
+
+.Gutter{
+    width:2%;
+    float:left;
+}
+
+.menu1{
+    width:12%;
+    float:left;
+    padding-right:20px;
+    padding-bottom: 5px;
+}
+.menu2{
+    width:12%;
+    float:left;
+    padding-right:20px;
+}
+.Gutterend{
+    width:21%;
+    float:left;
+}
+
+.columntwo{
+    width:52%;
+    float:left;
+}
+.Gutterend2{
+    width:36%;
+    float:left;
+}
+
+.topSpacer{
+    width:100%;
+    height:200px;
+    
+}
+/*Body crap*/
+
+.leftSpace{
+    width:52%;
+    float:left;
+}
+.homeAbout{
+    width:48%;
+    float:left;
+}
+.oneSpace{
+    width:100%;
+    height:100px;
+    float:left;
+}
+
+#bike{
+    width:100%;
+    height:auto;
+    display:block;
+    margin:auto;
+}
+#alAndOllie{
+    width:90%;
+    height:auto;
+    display:block;
+    margin: auto;
+}
+
+.homeBio{
+    width:48%;
+    float:left;
+}
+
+.leftGutterHeader2{
+    width:36%;
+    float:left;
+}
+
+/*Projects page*/
+.projectBlocks{
+    width:90%;
+    height:auto;
+    display:block;
+    margin: auto;
+}
+
+
+
+/*projects block*/
+.leftBlock{
+    width:100%;
+}
+
+#rubThatRubs{
+    width:100%;
+}
+
+#kinShift{
+    width:100%;
+}
+
+.GutterWide{
+    width:50%;
+    height:1%;
+    float:left;
+}
+.col-4.behind{
+	background-color:#37bbe4;
+	height:700px;
+	z-index:-1;
+	position:absolute;
+	left:10%;
+	top:200px;
+}
+
+
+/*Declaring columns*/
+
+
+
+
+
+
+
+
+/*mobile nav*/
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+@media only screen and (min-width: 1600px){
+.col-4.behind{
+   height:1000px;}
+
+}
+
+
+@media only screen and (min-width: 1026px) {
+    .mobileNav {
+        display: none;
+    }
+    .mobileFooter{
+    	display:none;   
+    }
+}
+@media only screen and (max-width: 1026px) {
+    .largeNav {
+        display: none;
+    }
+     .col-4.aboutme{
+        width{41.66%}
+    }
+    footer{
+    display:none;}
+    
+    .col-4.aboutme{
+    	width:100%;
+    }
+    .col-5.aboutBio{
+    	width:60%;
+    }
+    .col-575.space{
+        width:0;
+        padding:0;
+    }
+     .col-05.space{
+        width:0;
+        padding:0; 
+    }
+   .col-4.behind{
+   display:none;}
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+    .col-575.form{
+        width:100%
+    }
+    
+     .col-5.aboutBio{
+    	width:100%;
+    }
+    
+    .col-575.donair{
+    	width:100%;
+    }
+     .col-575.kinshift{
+    	width:100%;
+    }
+      .col-05.projectSpace{
+        display:none; 
+    }
+}
+   
+@media only screen and (max-width: 480px) {
+  
+    .col-575.foot{
+        width:100%;
+    }
+    .col-05.foot{
+        width:0;
+        padding:0;
+    }
+
+	.col-175.menu{
+	width:46%;
+	}
+    .col-1.main{
+    display:none;}
+     .col-5.aboutBio{
+    	width:100%;
+    }
+}
+
+
+/* hover effects */
+
+
+
+
+
+
+
+
+
+
+
+
+
